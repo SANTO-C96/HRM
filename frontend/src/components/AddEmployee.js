@@ -8,6 +8,7 @@ const AddEmployee = () => {
     const[empName,setEmpName] = useState("");
     const[empId,setEmpId] = useState("");
     const[empSalary,setEmpSalary] = useState("");
+  axios.defaults.withCredentials = true;
     const handleEmpName = (e)=>{
        setEmpName(e.target.value);
     }
