@@ -6,6 +6,7 @@ const database = require('./models/Database');
 database.connect();
 const Signup = require('./models/Signup');
 const Employee = require('./models/Employee')
+app.use(express.json());
 app.use(
     cors(
     {
