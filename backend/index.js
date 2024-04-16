@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(
     cors(
     {
-      origin:[""],
+      origin:["https://hrm-frontend-ashy.vercel.app"],
       methods: ["POST","GET","PUT","DELETE"],
       credentials: true
    }
