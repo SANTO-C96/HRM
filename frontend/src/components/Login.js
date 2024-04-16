@@ -7,6 +7,7 @@ const Login = () => {
   const navigate = useNavigate();
     const[email,setEmail] = useState("");
     const[password,setPassword] = useState("");
+  axios.defaults.withCredentials = true;
      const handleEmail = (e)=>{
         setEmail(e.target.value);
      }
