@@ -10,6 +10,7 @@ const Signup = () => {
     const[password,setPassword] = useState("");
     const[firstName,setFirstName] = useState("");
     const[lastName,setLastName] = useState("");
+    axios.defaults.withCredentials = true;
     const handleFirstName = (e)=>{
        setFirstName(e.target.value);
     }
