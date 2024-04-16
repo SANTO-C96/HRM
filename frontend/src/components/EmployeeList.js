@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 const EmployeeList = () => {
     const [employees, setEmployees] = useState([]);
     const navigate = useNavigate();
-    axios.defaults.withCredentials = true;
 
     useEffect(() => {
       fetch('https://hrm-api-zeta.vercel.app/getEmployee')
