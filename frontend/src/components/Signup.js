@@ -28,7 +28,7 @@ const Signup = () => {
 
      const handleSubmit = async(e)=>{
       e.preventDefault();
-        const response = await axios.post('http://localhost:5000/createHrProfile',{
+        const response = await axios.post('https://hrm-omega.vercel.app/createHrProfile',{
             firstName,
             lastName,
             email,
