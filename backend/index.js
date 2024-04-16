@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(
     cors(
     {
-      origin:["https://vercel.com/santosh-kumar-singhs-projects-fccce6cb/hrm-i7z9"],
+      origin:[""],
       methods: ["POST","GET","PUT","DELETE"],
       credentials: true
    }
