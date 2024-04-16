@@ -19,7 +19,7 @@ const Login = () => {
       e.preventDefault();
       
       try {
-        const response = await axios.post('https://hrm-omega.vercel.app/login', {
+        const response = await axios.post('https://hrm-api-zeta.vercel.app/login', {
           email,
           password
         });
