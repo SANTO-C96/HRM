@@ -7,7 +7,7 @@ const EmployeeList = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-      fetch('http://localhost:5000/getEmployee')
+      fetch('https://hrm-omega.vercel.app/getEmployee')
         .then(response => response.json())
         .then(data => setEmployees(data))
         .catch(error => console.error('Error fetching data:', error));
