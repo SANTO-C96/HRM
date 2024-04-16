@@ -23,7 +23,7 @@ const AddEmployee = () => {
 
      const handleSubmit = async(e)=>{
       e.preventDefault();
-        const response = await axios.post('https://hrm-omega.vercel.app/addEmployee',{
+        const response = await axios.post('https://hrm-api-zeta.vercel.app/addEmployee',{
             empName,
             empId,
             empSalary
